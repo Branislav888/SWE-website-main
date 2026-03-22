@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #8E87C6, #9DB6D9);
+    color: #F5F5F5;
+    line-height: 1.6;
+}
+.appointment {
+    text-align: center;
+    padding: 100px 5%;
+}
+.appointment h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 60px;
+    color: #f0f0f0;
+    opacity: 0.9;
+}
+.appointment-box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px; 
+    flex-wrap: wrap;
+}
+.info, .form {
+    background-color: rgba(111, 104, 168, 0.7);
+    padding: 45px;
+    border-radius: 30px;
+    width: 400px; 
+    box-sizing: border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info h3 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+.info li {
+    margin: 18px 0;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+}
+.formt, select {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #333;
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+    gap: 15px;
+}
+button {
+    margin-top: 20px;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+    color: #6F68A8;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+button:hover {
+    background-color: #5a548a;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.POTM {
+    text-align: center;
+    margin-top: 30px;
+}
+.appointments-table-container {
+    width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+table {
+    width: 840px;
+    background-color: #6F68A8;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+th, td {
+    width: 210px;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+th:last-child, td:last-child {
+    border-right: none;
+}
+tr:last-child td {
+    border-bottom: none;
+}
+th {
+    background-color: #5a548a;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+

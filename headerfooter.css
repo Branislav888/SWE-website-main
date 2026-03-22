@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #8E87C6, #9DB6D9);
+    color: #F5F5F5;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(111, 104, 168, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 20px 20px;
+}
+.logo {
+    width: 180px;
+    cursor: pointer;
+}
+.searchbar {
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #F5F5F5;
+    padding-left: 15px;
+    background-color: transparent;
+    color: white;
+}
+.searchbar::placeholder {
+    color: #ddd;
+}
+.icons img {
+    width: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+footer {
+    background-color: #6F68A8;
+    text-align: center;
+    padding: 20px;
+}
+.menuwrapper {
+    position: relative;
+    display: inline-block;
+}
+#menutoggle {
+    display: none;
+}
+.burgerpruhy {
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 1000;
+    background-color: #6F68A8;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+#menutoggle:checked~.burgerpruhy {
+    display: flex;
+}
+.pruh {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+.osetrenie {
+    background-color: #8b85c1;
+}
+.produkty {
+    background-color: #7a73b5;
+}
+.kosik {
+    background-color: #6F68A8;
+}

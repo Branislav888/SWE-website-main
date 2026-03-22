@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #8E87C6, #9DB6D9);
+    color: #F5F5F5;
+}
+
+/* ZMENŠENÝ HLAVNÝ OBAL */
+/* HLAVNÝ OBAL - VIAC PRIESTORU */
+/* ZÁKLADNÝ OBAL */
+.promo {
+    display: flex;              /* Toto ich dá vedľa seba */
+    align-items: center;        /* Vycentruje ich na výšku */
+    justify-content: center;    /* Vycentruje ich na stred stránky */
+    gap: 50px;                  /* Medzera medzi textom a fotkou */
+    width: 840px;               /* Šírka tvojho webu */
+    margin: 40px auto;          /* Odsadenie od ostatných vecí */
+    background-color: #6F68A8;  /* Tvoja fialová */
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* TEXTOVÁ ČASŤ */
+.sale {
+    width: 350px;              
+}
+.saleh2 {
+    font-size: 40px;
+    color: white;
+    margin: 0 0 10px 0;         /* Horný okraj 0, dolný 10px */
+    font-family: Arial, sans-serif;
+}
+
+.salep {
+    font-size: 24px;
+    color: white;
+    margin: 0 0 20px 0;
+}
+
+/* TLAČIDLO */
+.salebtn {
+    padding: 10px 30px;
+    background-color: white;
+    color: #6F68A8;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.salebtn:hover {
+    background-color: #3f3967;
+    color: white;
+}
+
+/* OBRÁZOK */
+.mainImage img {
+    width: 240px;               
+    height: 100px;
+    display: block;
+}
+
+/* TLAČIDLO */
+.salebtn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #6F68A8;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* OBRÁZOK */
+.mainImage img {
+    width: 240px;             /* Mierne väčšia fotka, aby to ladilo */
+    height: auto;
+    display: block;
+    filter: drop-shadow(10px 10px 20px rgba(0,0,0,0.3));
+}
+/* PRODUCTS */
+.POTM {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.listOfProducts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    background-color: rgba(111, 104, 168, 0.7);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(8px);
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 180px;            /* Presná fixná šírka */
+    height: 160px;         /* Fixná výška pre všetky obrázky rovnako! */
+    object-fit: contain;    /* Dôležité: obrázok sa nedeformuje, len sa prispôsobí */
+    background-color: white; /* Vytvorí biely podklad pod produktom */
+    border-radius: 15px;    /* Zaoblené rohy samotného obrázka */
+    padding: 10px;          /* Priestor okolo produktu, aby sa nelepil na okraje */
+    display: block;
+    margin-bottom: 15px;    /* Medzera pod obrázkom k názvu */
+}
+
+.productbtn {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #F5F5F5;
+    color: #6F68A8;
+    transition: 0.3s;
+}
+
+.productbtn:hover {
+    background-color: #6F68A8;
+    color: white;
+}
+
+/* DOCTORS */
+.doctors {
+    text-align: center;
+    padding: 40px;
+}
+
+.docs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.doc {
+    background-color: rgba(111, 104, 168, 0.7);
+    padding: 15px;
+    border-radius: 20px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.doc:hover {
+    transform: scale(1.05);
+}
+
+.doc img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* MAP */
+.find {
+    text-align: center;
+}
+
+.imageMap {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+/* CITIES */
+.listOfCities {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.listOfCities div {
+    background-color: rgba(111, 104, 168, 0.7);
+    padding: 20px;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.listOfCities div:hover {
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #6F68A8;
+    text-align: center;
+    padding: 20px;
+}
