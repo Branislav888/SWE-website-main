@@ -13,13 +13,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 100px;
     width: 600px;
     margin: 30px auto;
     background-color: #6F68A8;
     padding: 20px 40px;
     border-radius: 25px;
     box-shadow: 0 10px 25px rgba(111, 104, 168, 0.2);
+    
 }
 .sale {
     width: 250px;

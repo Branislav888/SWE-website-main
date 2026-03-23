@@ -40,6 +40,21 @@ footer {
     background-color: #6F68A8;
     text-align: center;
     padding: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.footercontent div {
+    width: 200px;
+}
+.copy {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
 }
 .menuwrapper {
     position: relative;
