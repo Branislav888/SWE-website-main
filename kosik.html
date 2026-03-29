@@ -29,38 +29,124 @@
 
                 <div class="burgerpruhy">
                     <a href="acc.html" class="pruh osetrenie"><span>Ošetrenie</span></a>
-                    <a href="produkty.html" class="pruh produkty"><span>Produkty</span></a>
+                    <a href="produkty.html" class="pruh produkty"><span>Katalog Produktov</span></a>
                     <a href="kosik.html" class="pruh kosik"><span>Košík</span></a>
                 </div>
             </div>
         </div>
     </header>
 
-<h2 class="title">Košik</h2>
-<p class="infoText">Produkty si môžete vyzdvihnúť jedine v predajni.</p>
-<p class="titlep"> Nic ste si nevybrali. Košik je prázdny.</p>
+<h2 class="title">Katalog Produktov - Nakup</h2>
+<form action="https://formspree.io/f/mjgpyzgq" method="POST">
+    
+    <div class="userInformation">
+        <input class="formt" type="text" name="meno" placeholder="Meno Priezvisko" required>
+        <input class="formt" type="email" name="email" placeholder="Email" required>
+        <select name="mesto" required>
+            <option value="">Vyber Mesto</option>
+            <option value="Bratislava">Bratislava</option>
+            <option value="Zilina">Žilina</option>
+            <option value="Banska Bystrica">Banská Bystrica</option>
+            <option value="Kosice">Košice</option>
+        </select>
+    </div>
 
-<h2 class="title1">Mohlo by vas zaujímať</h2>
+    <div class="productSelection">
+        <h3 style="color: white; font-family: 'Segoe UI', sans-serif;">Vyberte produkty:</h3>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="cerave" name="produkt_cerave" value="CeraVe - Hydrating Cleanser">
+            <label for="cerave"><strong>CeraVe</strong> - Hydrating Cleanser</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="vichy" name="produkt_vichy" value="Vichy - Normaderm Phytosolution">
+            <label for="vichy"><strong>Vichy</strong> - Normaderm Phytosolution</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="bioderma" name="produkt_bioderma" value="Bioderma - Sébium H2O">
+            <label for="bioderma"><strong>Bioderma</strong> - Sébium H2O</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="neutrogena" name="produkt_neutrogena" value="Neutrogena - Hydro Boost">
+            <label for="neutrogena"><strong>Neutrogena</strong> - Hydro Boost Micellar Water</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="garnier" name="produkt_garnier" value="Garnier - Pure Active 3v1">
+            <label for="garnier"><strong>Garnier</strong> - Pure Active 3v1</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="tocobo" name="produkt_tocobo" value="TOCOBO - Cica Calming Powder Wash">
+            <label for="tocobo"><strong>TOCOBO</strong> - Cica Calming Powder Wash</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="ordinaryFerment" name="produkt_ordinary_ferment" value="The Ordinary - Saccharomyces Ferment 30%">
+            <label for="ordinaryFerment"><strong>The Ordinary</strong> - Saccharomyces Ferment 30%</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="ordinaryGf" name="produkt_ordinary_gf" value="The Ordinary - GF 15% Solution">
+            <label for="ordinaryGf"><strong>The Ordinary</strong> - GF 15% Solution</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="someByMi" name="produkt_somebymi" value="SOME BY MI - AHA.BHA.PHA Miracle Foam">
+            <label for="someByMi"><strong>SOME BY MI</strong> - AHA.BHA.PHA Miracle Foam</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="cosrx" name="produkt_cosrx" value="COSRX - Advanced Snail Gel Cleanser">
+            <label for="cosrx"><strong>COSRX</strong> - Advanced Snail Gel Cleanser</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="mixa" name="produkt_mixa" value="Mixa - Optimal Tolerance Milk">
+            <label for="mixa"><strong>Mixa</strong> - Optimal Tolerance Milk</label>
+        </div>
+
+        <div class="checkboxItem">
+            <input type="checkbox" id="ordinaryCopper" name="produkt_ordinary_copper" value="The Ordinary - Multi-Peptide + Copper Peptides">
+            <label for="ordinaryCopper"><strong>The Ordinary</strong> - Multi-Peptide + Copper Peptides</label>
+        </div>
+
+        <button class="productbtn" >Odoslať objednávku</button>
+    </div>
+</form>
+
 <div class="listOfProducts">
 
     <div class="product">
-        <img src="Images/product5.png">
-        <p>Pleťový čistiaci gel</p>
-        <p>7.99€</p>
+        <a href="pro9.html">
+            <img src="Images/product9.png" alt="Pleťový čistiaci gel">
+            <p>Some by mi</p>
+            <p>Pleťový čistiaci gel</p>
+            <p>9.99€</p>
+        </a>
         <button class="productbtn">Pridať do košíka</button>
     </div>
 
     <div class="product">
-        <img src="Images/product6.png">
-        <p>Pleťové sérum</p>
-        <p>18.99€</p>
+        <a href="pro10.html">
+            <img src="Images/product10.png" alt="Pleťový čistiaci gel">
+            <p>Cosrx</p>
+            <p>Pleťový čistiaci gel</p>
+            <p>16.99€</p>
+        </a>
         <button class="productbtn">Pridať do košíka</button>
     </div>
 
     <div class="product">
-        <img src="Images/product7.png">
-        <p>Pleťové krém s mliečnou texturou</p>
-        <p>9.99€</p>
+        <a href="pro11.html">
+            <img src="Images/product11.png" alt="Pleťový krém">
+            <p>Mixa</p>
+            <p>Pleťový krém</p>
+            <p>12.99€</p>
+        </a>
         <button class="productbtn">Pridať do košíka</button>
     </div>
 </div>

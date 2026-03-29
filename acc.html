@@ -29,7 +29,7 @@
 
                 <div class="burgerpruhy">
                     <a href="acc.html" class="pruh osetrenie"><span>Ošetrenie</span></a>
-                    <a href="produkty.html" class="pruh produkty"><span>Produkty</span></a>
+                    <a href="produkty.html" class="pruh produkty"><span>Katalog Produktov</span></a>
                     <a href="kosik.html" class="pruh kosik"><span>Košík</span></a>
                 </div>
             </div>
@@ -55,24 +55,28 @@
             </ul>
         </div>
 
-        <div class="form">
-            <input class="formt" type="text" placeholder="Meno Priezvisko">
-            <input class="formt" type="email" placeholder="Email">
+        <form action="https://formspree.io/f/mdapaylg" method="POST">
 
-            <select>
-                <option>Vyber službu</option>
-                <option>Ošetrenie pleti</option>
-                <option>Konzultácia</option>
-                <option>Čistenie pleti</option>
+        <div class="form">
+            <input class="formt" type="text" name="meno" placeholder="Meno Priezvisko" required>
+            <input class="formt" type="email" name="email" placeholder="Email" required>
+
+            <select name="sluzba" required>
+                <option value="">Vyber službu</option>
+                <option value="Ošetrenie pleti">Ošetrenie pleti</option>
+                <option value="Konzultácia">Konzultácia</option>
+                <option value="Čistenie pleti">Čistenie pleti</option>
             </select>
 
             <div class="row">
-                <input class="inputRowDate" type="date">
-                <input class="inputRowTime" type="time">
+                <input class="inputRowDate" type="date" name="datum" required>
+                <input class="inputRowTime" type="time" name="cas" required>
             </div>
 
-            <button>Rezervovať termín</button>
+            <button type="submit">Rezervovať termín</button>
         </div>
+
+        </form>
 
     </div>
 
