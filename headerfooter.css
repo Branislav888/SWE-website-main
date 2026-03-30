@@ -46,6 +46,10 @@ footer {
     border-top-right-radius: 40px;
     font-size: 18px;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
 .footercontent {
     display: flex;
     justify-content: space-around;

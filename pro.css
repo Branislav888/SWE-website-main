@@ -71,12 +71,3 @@
     margin: 8px ;
     line-height: 1.5;
 }
-@media (max-width: 900px) {
-    .product {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .sideLeft img {
-        max-width: 300px;
-    }
-}
